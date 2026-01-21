@@ -18,6 +18,14 @@ Production-grade e-commerce backend using Node.js, Express, PostgreSQL, TypeScri
 ### Environment
 Copy `.env.example` to `.env` and update values.
 
+```bash
+cp .env.example .env
+```
+
+Ensure `DATABASE_URL` matches your environment:
+- Docker: `postgresql://postgres:postgres@db:5432/sauna`
+- Local: `postgresql://postgres:postgres@localhost:5432/sauna`
+
 ### Docker
 ```bash
 docker-compose up --build

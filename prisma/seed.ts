@@ -1,6 +1,9 @@
+import dotenv from 'dotenv';
 import bcrypt from 'bcryptjs';
 
 import { prisma } from '../src/utils/prisma';
+
+dotenv.config();
 
 async function main() {
   const adminEmail = 'admin@example.com';
